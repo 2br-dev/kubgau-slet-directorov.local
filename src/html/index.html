@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Растим кадры для будущего АПК</title>
+	<link rel="stylesheet" href="./kubgau-slet-2025/css/master.css">
+	<link rel="stylesheet" href="./kubgau-slet-2025/css/pages/main.css">
+</head>
+<body>
+	@@include('./parts/header.html')
+	<main id="top">
+		<section id="hero">
+			<div class="container">
+				<div class="row flex vcenter">
+					<div class="col l6">
+						<hgroup>
+							<h1>Растим кадры для будущего АПК</h1>
+							<p>Реализация единой модели профориентации в школе: агротехнологическое образование. Навигация школьников и студентов на рынке труда</p>
+						</hgroup>
+					</div>
+					<div class="col l6">
+						<img src="./kubgau-slet-2025/img/hero.webp" alt="Первый приветственный форум Агроклассов">
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="timeline">
+			<div class="container">
+				<div class="row">
+					<div class="col l10 offset-l1">
+						<h2>Расписание мероприятия</h2>
+						<div class="timeline-wrapper">
+							@@loop('./parts/timeline-entry.html', './data/timeline.json')
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="join">
+			<div class="container">
+				<div class="row flex vcenter">
+					<div class="col l4 offset-l1">
+						<h2>Чат Агроклассов в Телеграм</h2>
+						<p>
+							<a href="https://t.me/+DJKgyvr_K0pjMTNi" class="bttn" target="_blank" rel="nofollow">
+								<img src="./kubgau-slet-2025/img/telegram.svg" alt="Присоединиться">
+								<span>Присоединиться</span>
+							</a>
+						</p>
+					</div>
+					<div class="col l6 offset-l1">
+						<img src="./kubgau-slet-2025/img/telegram-background.webp" alt="Чат Агроклассов в Телеграм">
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	@@include('./parts/footer.html')
+</body>
+</html>
