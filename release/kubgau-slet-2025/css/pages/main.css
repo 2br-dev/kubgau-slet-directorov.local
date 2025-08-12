@@ -3,7 +3,7 @@ header {
     margin-bottom: 2vw;
     position: sticky;
     top: 0;
-    z-index: 2;
+    z-index: 20;
     background-color: rgba(239, 248, 212, 0.8);
     padding: 10px 0;
     backdrop-filter: blur(10px);
